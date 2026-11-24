@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODERWANDA Ltd - Login</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eaf1f8;
+        }
+
+        header {
+            background-color: #102a43;
+            color: white;
+            padding: 20px 50px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .login-box {
+            background-color: white;
+            width: 350px;
+            margin: 70px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #102a43;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0878c9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #065f9e;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        a {
+            color: #0878c9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">Home</a>
+        <strong>CODERWANDA Ltd</strong>
+    </header>
+
+    <div class="login-box">
+
+        <h2>User Login</h2>
+
+        <p>Welcome back! Please login to your account.</p>
+
+        <form action="/login" method="POST">
+
+            <label>Email Address</label>
+
+            <input type="email"
+                   name="email"
+                   placeholder="Enter your email"
+                   required>
+
+            <label>Password</label>
+
+            <input type="password"
+                   name="password"
+                   placeholder="Enter your password"
+                   required>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p>Don't have an account?</p>
+
+        <p>
+            <a href="register.html">Create Account</a>
+        </p>
+
+        <p>
+            <a href="index.html">Back to Home</a>
+        </p>
+
+    </div>
+
+</body>
+</html>
